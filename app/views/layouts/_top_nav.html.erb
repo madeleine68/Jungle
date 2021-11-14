@@ -30,7 +30,6 @@
       <li>
         <%= link_to 'About Us', :about_controller %>
          <li/>
-
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
@@ -48,6 +47,13 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </li>
+        <span class="navbar-text">
+          <% if current_user %>
+            Signed in as <%= current_user.name %> | <%= link_to "Log Out", '/logout' %>
+          <% else %>
+            <%= link_to 'Login', '/login' %> | <%= link_to 'Sign Up', '/signup' %>
+          <% end %>
+         </span>
       </ul>
     </div>
   </div>
