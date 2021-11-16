@@ -4,7 +4,7 @@
 
   <div class="form-group">
     <%= label_tag :name, 'Name' %>
-    <%= f.text_field :first_name, class: 'form-control', placeholder: 'First Name' %>
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
   </div>
 
   <div class="form-group">
@@ -13,12 +13,12 @@
   </div>
 
   <div class="form-group">
-    <%= label_tag :password, 'Password' %>
+    <%= label_tag :password, 'Password', :autocomplete => :on %>
     <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
   </div>
 
   <div class="form-group">
-    <%= label_tag :password_confirmation, 'Password Confirmation' %>
+    <%= label_tag :password_confirmation, 'Password Confirmation', :autocomplete => :on %>
     <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Password Confirmation' %>
   </div>
   
