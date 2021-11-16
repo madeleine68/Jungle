@@ -13,7 +13,7 @@ RSpec.describe Product, type: :model do
 
       @product.name = 'test' #valid
       @product.valid?
-      expect(@product.errors[:name]).not_to include("can't be blank")
+      expect(@product.errors[:name]).not_to include("can't be blank") ## check for presence of error
     end    
 
     it "price_cents presence" do
@@ -35,7 +35,7 @@ RSpec.describe Product, type: :model do
 
       @product.quantity = 20
       @product.valid?
-      expect(@product.errors[:quantity]).not_to include("can't be blank")
+      expect(@product.errors[:quantity]).not_to include("can't be blank") 
     end 
 
     it "category_id " do
