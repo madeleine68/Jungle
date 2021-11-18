@@ -1,7 +1,7 @@
 # Jungle
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
-(![demo](https://user-images.githubusercontent.com/46178706/142317111-fa8280f7-dcce-416d-afdc-1a9441b4474f.gif))
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/46178706/142321117-fbd4098e-fba1-44ed-aafa-958a6ab6a6c0.gif)
 
 
 ## Additional Steps for Apple M1 Machines
